@@ -8,9 +8,12 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-		<title>Document</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+		<title>Grow UP - Platform Konsultasi Bisnis UMKM</title>
 	</head>
 	<style>
 		body {
@@ -29,7 +32,7 @@
 						</span> -->
 					</a>
 					<div class="flex items-center lg:order-2">
-						<a href="#" class="text-white bg-emerald-500 hover:bg-yellow-600 focus:ring-4 focus:ring-emerald-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none">Daftar</a>
+						<a href="#" class="text-white bg-emerald-500 hover:bg-emerald-600 focus:ring-4 focus:ring-emerald-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none">Daftar</a>
 						<button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-2" aria-expanded="false">
 							<span class="sr-only">Open main menu</span>
 							<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -63,9 +66,9 @@
 			</nav>
 		</header>
 		<main>
-			<section class="bg-white min-h-[600px] flex px-8 md:px-20 py-20">
-				<div class="flex flex-col-reverse md:flex-row items-center mx-auto max-w-screen-xl w-full lg:gap-8">
-					<div class="w-full md:w-1/2 md:mt-0 mt-10">
+			<section id="jumbotron" class="bg-white min-h-[600px] flex px-8 md:px-20 py-12 lg:py-20">
+				<div class="flex flex-col-reverse lg:flex-row items-center justify-center mx-auto max-w-screen-xl w-full">
+					<div class="w-full lg:w-1/2 animate__animated animate__slideInLeft">
 						<p class="pl-2 pr-4 inline-flex gap-2 py-2 mb-2 bg-yellow-100 text-yellow-500 text-sm rounded-xl">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-5">
 								<path
@@ -76,7 +79,7 @@
 							</svg>
 							Kuasai Pasar Sekarang
 						</p>
-						<h1 class="max-w-xl mb-4 text-4xl md:text-5xl font-bold tracking-tight leading-[40px] md:leading-[50px]">
+						<h1 class="max-w-xl mb-4 text-4xl md:text-5xl font-bold tracking-tight leading-[40px] md:leading-[60px]">
 							Nikmati Layanan
 							<span class="text-emerald-500">Konsultasi yang Inklusif</span>
 							Sesuai dengan Kebutuhan Bisnis Anda
@@ -85,27 +88,27 @@
 							Dorong kemajuan bisnis anda bersama
 							<span class="text-emerald-500">GrowUP!</span>
 						</p>
-						<a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-emerald-500 hover:bg-emerald-800 focus:ring-4 focus:ring-emerald-300">
+						<a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-emerald-500 hover:bg-emerald-600 focus:ring-4 focus:ring-emerald-300">
 							Get started
 							<svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
 							</svg>
 						</a>
 					</div>
-					<div class="w-full md:w-1/2">
-						<img src="./assets/img/jumbotron.png" class="w-[500px] align-top" alt="card-jumbotron" />
+					<div class="w-full md:w-1/2 hidden lg:block animate__animated animate__slideInRight">
+						<img src="./assets/img/jumbotron.png" class="w-[650px]" alt="card-jumbotron" />
 					</div>
 				</div>
 			</section>
 
-			<section class="bg-emerald-50 px-2 text-center md:px-20">
+			<section id="category" class="bg-emerald-50 px-2 text-center md:px-20 py-12 lg:py-20">
 				<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-4">
 					<div class="mb-8 lg:mb-16">
-						<h2 class="mb-4 pb-2 border-b inline-flex border-b-4 border-b-amber-200 text-2xl text-center md:text-4xl tracking-tight font-extrabold text-emerald-900">Kategori Produk</h2>
+						<h2 class="mb-4 pb-2 border-b inline-flex border-b-4 border-b-amber-200 text-2xl text-center md:text-4xl tracking-tight font-extrabold text-emerald-900">Kategori Konsultasi</h2>
 						<!-- <p class="text-gray-500 sm:text-xl">Nilai penting dan berbagai keuntungan yang akan kamu dapatkan ketika menggunakan layanan kami.</p> -->
 					</div>
-					<div class="w-full flex flex-wrap gap-2 items-center justify-center">
-						<div class="bg-white shadow-xl px-4 md:px-8 w-full md:w-1/4 py-4 rounded-xl flex items-center gap-3">
+					<div class="w-full flex flex-wrap gap-4 items-center justify-center">
+						<div class="bg-white shadow-xl px-4 md:px-8 w-full md:w-2/4 lg:w-1/4 py-4 rounded-xl flex items-center gap-3">
 							<div class="flex justify-center items-center w-10 h-10 rounded-full bg-emerald-100 lg:h-12 lg:w-12">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-emerald-600 lg:w-6 lg:h-6">
 									<path
@@ -124,7 +127,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="bg-white shadow-xl px-4 md:px-8 w-full md:w-1/4 py-4 rounded-xl flex items-center gap-3">
+						<div class="bg-white shadow-xl px-4 md:px-8 w-full md:w-2/4 lg:w-1/4 py-4 rounded-xl flex items-center gap-3">
 							<div class="flex justify-center items-center w-10 h-10 rounded-full bg-emerald-100 lg:h-12 lg:w-12">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-emerald-600 lg:w-6 lg:h-6">
 									<path
@@ -143,7 +146,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="bg-white shadow-xl px-4 md:px-8 w-full md:w-1/4 py-4 rounded-xl flex items-center gap-3">
+						<div class="bg-white shadow-xl px-4 md:px-8 w-full md:w-2/4 lg:w-1/4 py-4 rounded-xl flex items-center gap-3">
 							<div class="flex justify-center items-center w-10 h-10 rounded-full bg-emerald-100 lg:h-12 lg:w-12">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-emerald-600 lg:w-6 lg:h-6">
 									<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
@@ -158,7 +161,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="bg-white shadow-xl px-4 md:px-8 w-full md:w-1/4 py-4 rounded-xl flex items-center gap-3">
+						<div class="bg-white shadow-xl px-4 md:px-8 w-full md:w-2/4 lg:w-1/4 py-4 rounded-xl flex items-center gap-3">
 							<div class="flex justify-center items-center w-10 h-10 rounded-full bg-emerald-100 lg:h-12 lg:w-12">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-emerald-600 lg:w-6 lg:h-6">
 									<path
@@ -177,7 +180,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="bg-white shadow-xl px-4 md:px-8 w-full md:w-1/4 py-4 rounded-xl flex items-center gap-3">
+						<div class="bg-white shadow-xl px-4 md:px-8 w-full md:w-2/4 lg:w-1/4 py-4 rounded-xl flex items-center gap-3">
 							<div class="flex justify-center items-center w-10 h-10 rounded-full bg-emerald-100 lg:h-12 lg:w-12">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-emerald-600 lg:w-6 lg:h-6">
 									<path
@@ -194,6 +197,69 @@
 										<path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
 									</svg>
 								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="best-mentor" class="min-h-[600px] flex px-8 md:px-20 py-12 lg:py-20">
+				<div class="py-8 px-4 mx-auto w-full text-center">
+					<div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+						<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+							Rekomendasi
+							<span class="border-0 border-b-4 border-b-yellow-400">Mentor</span>
+							Terbaik
+						</h2>
+						<!-- <p class="font-light text-gray-500 sm:text-xl">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p> -->
+					</div>
+					<div class="flex gap-8">
+						
+						<div class="bg-white border border-gray-200 rounded-xl shadow lg:w-1/4 p-3">
+							<a href="#">
+								<img class="rounded-lg" src="./assets/img/iwbe.png" alt="" />
+							</a>
+							<div class="">
+								<a href="#">
+									<h5 class="text-2xl lg:text-xl mt-3 font-bold tracking-tight text-left text-gray-900">Muhammad Ammar Afif</h5>
+								</a>
+								<div class="flex items-center text-center py-2">
+									<svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+										<path
+											d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+										/>
+									</svg>
+									<svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+										<path
+											d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+										/>
+									</svg>
+									<svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+										<path
+											d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+										/>
+									</svg>
+									<svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+										<path
+											d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+										/>
+									</svg>
+									<svg class="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+										<path
+											d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+										/>
+									</svg>
+									<span class="ms-2">(14 Ulasan)</span>
+								</div>
+								<hr class="my-2" />
+								<div class="flex items-center justify-between py-2">
+									<h4 class="font-extrabold text-xl">Rp.50.000</h4>
+									<a href="#" class="flex items-center justify-center text-sm font-medium text-emerald-500">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+											<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+										</svg>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
